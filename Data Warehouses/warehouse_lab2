@@ -1,0 +1,14 @@
+1. Use egrep to list words beginning with "aa" in the /usr/share/dict/words dictionnary.
+
+egrep ^aa. /usr/share/dict/words
+
+2. Count words containing the substring "hard" in this dictionnary.
+
+egrep 'hard' /usr/share/dict/words
+
+3. List words having a 6-letter substring none of which are vowels. To keep things simple you may consider accented vowels to be non-vowels. But you must avoid punctuation symbols. For an optimal solution consider using equivalence classes.
+
+egrep [^aeiouyYAEIOU]{6} /usr/share/dict/words
+
+4. Do some words have a letter repeated three times in a row?
+
