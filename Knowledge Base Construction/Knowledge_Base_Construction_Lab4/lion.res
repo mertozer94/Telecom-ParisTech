@@ -1,0 +1,6 @@
+lioneatsanimals
+lionlikestomatoes
+hascaninelion
+iscarnivorelion
+lioneatsvegetables
+isherbivorelion
