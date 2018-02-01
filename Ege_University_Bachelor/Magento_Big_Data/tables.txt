@@ -1,0 +1,76 @@
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_cataloginventory_stock_item \--m 1 \--as-avrodatafile 
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_cataloginventory_stock_status \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_catalogsearch_query \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_catalogsearch_result \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_catalog_category_entity \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_catalog_category_product \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_catalog_compare_item \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_catalog_product_entity_text \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_catalog_product_index_price \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_catalog_product_link \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_core_email_queue_recipients \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_customer_address_entity_text \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_customer_entity \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_customer_group \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_log_customer \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_log_visitor \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_newsletter_subscriber \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_paypal \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table payment_transaction \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_poll \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_poll_answer \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_poll_vote \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_product_alert_price \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_product_alert_stock \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_report_viewed_product_index \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_review_detail \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_review_store \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_sales_bestsellers_aggregated_daily \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_sales_bestsellers_aggregated_monthly \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_sales_bestsellers_aggregated_yearly \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_sales_flat_order \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_tag \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_wishlist \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_rating_option_vote \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_review \--m 1 \--as-avrodatafile
+
+sqoop import --bindir ./ --connect jdbc:mysql://demo.ozermert.co/i3013750_mg2 \--username enterYourUsername --password enterYourPassword \--table mg_catalog_category_product_index \--m 1 \--as-avrodatafile
+
+
+
+
+

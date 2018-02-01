@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="linqbag">
+  <DataContextMoniker Name="/linqbagDataContext" />
+  <nestedChildShapes>
+    <classShape Id="bf3961f4-558e-403f-b81d-3b5c682c5cde" absoluteBounds="0.75, 1, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/linqbagDataContext/Doctor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f1f4ffd4-bc80-4351-9a6c-38a0632d96d4" absoluteBounds="0.765, 1.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6a23af14-9bb5-48d5-8649-05f6cd6f8036" absoluteBounds="3.5, 1.375, 2, 1.9631982421874998">
+      <DataClassMoniker Name="/linqbagDataContext/İslem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="55999dc0-3cce-41f3-aff2-a4006d10bceb" absoluteBounds="3.515, 1.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e54e6c74-9564-4355-ad52-85254e52bb4d" absoluteBounds="0.875, 5.375, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/linqbagDataContext/Kayıt" />
+      <nestedChildShapes>
+        <elementListCompartment Id="91db5474-9be6-4318-981f-8fef92ee2746" absoluteBounds="0.88999999999999968, 5.8350000000000009, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="16277c44-40e5-4a85-9ca7-dabd78075ed3" absoluteBounds="6.5, 0.875, 2, 4.0785139973958318">
+      <DataClassMoniker Name="/linqbagDataContext/Person" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5acbae0a-8356-444e-a71a-af89a6046b8b" absoluteBounds="6.515, 1.335, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.35659912109375); (3.5 : 2.35659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqbagDataContext/Doctor/Doctor_İslem" />
+      <nodes>
+        <classShapeMoniker Id="bf3961f4-558e-403f-b81d-3b5c682c5cde" />
+        <classShapeMoniker Id="6a23af14-9bb5-48d5-8649-05f6cd6f8036" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.5 : 2.35659912109375); (5.5 : 2.35659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqbagDataContext/Person/Person_İslem" />
+      <nodes>
+        <classShapeMoniker Id="16277c44-40e5-4a85-9ca7-dabd78075ed3" />
+        <classShapeMoniker Id="6a23af14-9bb5-48d5-8649-05f6cd6f8036" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

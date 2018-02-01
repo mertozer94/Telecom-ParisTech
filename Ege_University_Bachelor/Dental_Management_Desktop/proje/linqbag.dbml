@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DisHekimi" Class="linqbagDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=VESTEL-VESTEL\SQLEXPRESS;Initial Catalog=DisHekimi;Integrated Security=True" SettingsObjectName="proje.Properties.Settings" SettingsPropertyName="DisHekimiConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Doctor" Member="Doctors">
+    <Type Name="Doctor">
+      <Column Name="TC_kimlik" Type="System.String" DbType="NVarChar(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AdSoyad" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SicilNo" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="Ceptel" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="Evtel" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="Cinsiyet" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="il" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ilce" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Adres" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Doctor_İslem" Member="İslems" ThisKey="TC_kimlik" OtherKey="Doktor_TC" Type="İslem" />
+    </Type>
+  </Table>
+  <Table Name="dbo.İslem" Member="İslems">
+    <Type Name="İslem">
+      <Column Name="RezID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RezTarihi" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="MuayaneTur" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Doktor_TC" Type="System.String" DbType="NVarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="Hasta_TC" Type="System.String" DbType="NVarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="Saat" Type="System.String" DbType="NVarChar(5) NOT NULL" CanBeNull="false" />
+      <Association Name="Doctor_İslem" Member="Doctor" ThisKey="Doktor_TC" OtherKey="TC_kimlik" Type="Doctor" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Person_İslem" Member="Person" ThisKey="Hasta_TC" OtherKey="TC_kimlik" Type="Person" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Kayıt" Member="Kayıts">
+    <Type Name="Kayıt">
+      <Column Name="K_Adi" Type="System.String" DbType="NVarChar(25) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="sifre" Type="System.String" DbType="NVarChar(11) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Person" Member="Persons">
+    <Type Name="Person">
+      <Column Name="TC_kimlik" Type="System.String" DbType="NVarChar(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AdSoyad" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="BabaAdı" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AnaAdı" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DogumYeri" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DogumTarihi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Cinsiyet" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="SosyalGüvence" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SGNO" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="MedeniDurum" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="il" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ilce" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Adres" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PostaKodu" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ceptel" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="Evtel" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Person_İslem" Member="İslems" ThisKey="TC_kimlik" OtherKey="Hasta_TC" Type="İslem" />
+    </Type>
+  </Table>
+</Database>

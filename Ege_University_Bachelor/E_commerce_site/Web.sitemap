@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/aa.aspx" title="Anasayfa">
+    <siteMapNode url="~/index.aspx" title="Anasayfa">
+
+    </siteMapNode>
+    <siteMapNode url="~/faq.aspx" title="SSS">
+      
+    </siteMapNode>
+    <siteMapNode url="~/contact.aspx" title="Iletisim">
+      
+    </siteMapNode>
+    <siteMapNode url="~/register.aspx" title="Kayıt">
+      
+    </siteMapNode>
+    <siteMapNode url="~/Default.aspx" title="Kur Cevirici">
+      
+    </siteMapNode>  
+
+  </siteMapNode>
+</siteMap>
